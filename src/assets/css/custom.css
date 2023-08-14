@@ -1,0 +1,91 @@
+.social-login-container,
+.social-register-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-login,
+.social-register {
+    width: 100%;
+    height: 42px;
+    border: 1px solid rgba(18, 18, 18, 0.14);
+    border-radius: 2px;
+    background: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 0.00177646em;
+
+}
+
+.social-login:hover,
+.social-register:hover {
+    background: #FAFAFA;
+    border: 1px solid rgba(18, 18, 18, 0.08);
+}
+
+.social-login img,
+.social-register img {
+    width: 18px;
+    height: 18px;
+}
+
+
+.login-saperation,
+.register-saperation {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.login-saperation::before,
+.login-saperation::after,
+.register-saperation::before,
+.register-saperation::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: rgba(18, 18, 18, 0.14);
+    /* Border color */
+    margin: 0 12px;
+    /* Adjust spacing as needed */
+}
+
+.login-saperation::before,
+.register-saperation::after {
+    margin-left: 0;
+}
+
+.login-saperation::after,
+register-saperation::after {
+    margin-right: 0;
+}
+
+.not-memeber {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 720px) {
+
+    .social-register-container,
+    .register-saperation {
+        padding: 0 12px;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .social-register-container,
+    .register-saperation {
+        padding: 0;
+    }
+}
